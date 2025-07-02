@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conhecendo o HTML</title>
+</head>
+<body>
+    <main>
+        <h1>Explicações de um iniciante em HTML - Desafio HTML</h1>
+        <hr />
+        <h2><mark>Meu nome é Gustavo. Seja bem-vindo ao meu primeiro site em HTML!</mark></h2>
+
+        <nav aria-label="Índice do conteúdo">
+            <h3>Índice</h3>
+            <ul>
+                <li><a href="#surgimento">Surgimento do HTML</a></li>
+                <li><a href="#oque-é">O que é o HTML?</a></li>
+                <li><a href="#funcionamento">Como funciona o HTML?</a></li>
+                <li><a href="#tags-html">O que são tags?</a></li>
+                <li><a href="#entendendo">Entenda o que cada tag faz e em quais situações elas devem ser usadas no HTML.</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+            </ul>
+        </nav>
+
+        <hr />
+
+        <section id="surgimento">
+            <h3>Surgimento do HTML</h3>
+            <p>
+                O HTML (HyperText Markup Language) foi criado no início dos anos 1990 por Tim Berners-Lee, um cientista britânico que trabalhava no CERN (Organização Europeia para a Pesquisa Nuclear), na Suíça.
+            </p>
+            <p>
+                A ideia surgiu da necessidade de compartilhar documentos científicos entre pesquisadores de diferentes locais do mundo. Para isso, Berners-Lee propôs um sistema de hipertexto que permitisse a conexão entre documentos usando links — daí nasceu a World Wide Web (WWW).
+            </p>
+            <p>
+                Em 1991, ele publicou a primeira versão do HTML, com apenas 18 tags, dando início à internet como conhecemos hoje.
+            </p>
+        </section>
+
+        <section id="oque-é">
+            <h3>O que é o HTML?</h3>
+            <p>
+                HTML (sigla para HyperText Markup Language, ou Linguagem de Marcação de Hipertexto) é a linguagem padrão usada para criar páginas da web.
+            </p>
+            <p>
+                Em vez de ser uma linguagem de programação como <b>Python</b> ou <b>JavaScript</b>, o HTML é uma linguagem de marcação — ou seja, ele estrutura e organiza o conteúdo que aparece no navegador.
+            </p>
+        </section>
+
+        <section id="funcionamento">
+            <h3>Como funciona o HTML?</h3>
+            <p>
+                O HTML funciona como uma “linguagem de marcação”, onde você usa tags para organizar e estruturar o conteúdo da sua página.
+            </p>
+            <p>
+                Cada tag tem uma função específica, tipo: <code>&lt;h1&gt;</code> para título, <code>&lt;p&gt;</code> para parágrafo, <code>&lt;a&gt;</code> para links.
+            </p>
+            <p>
+                Essas tags “dizem” ao navegador como mostrar o conteúdo na tela — se é um texto grande, uma lista, uma imagem, etc.
+            </p>
+            <p>
+                O navegador interpreta o código HTML e renderiza (mostra) a página visualmente para o usuário.
+            </p>
+        </section>
+
+        <section id="tags-html">
+            <h3>O que são tags?</h3>
+            <p>
+                Tags são os elementos básicos da linguagem HTML. Elas funcionam como “etiquetas” que indicam ao navegador o que o conteúdo representa e como ele deve ser exibido.
+            </p>
+            <p>
+                Toda tag é escrita entre sinais de menor e maior, tipo: nome-da-tag.
+            </p>
+            <p>
+                Na maioria das vezes, as tags vêm em pares: uma de abertura <code>&lt;p&gt;</code> e uma de fechamento <code>&lt;/p&gt;</code>, envolvendo o conteúdo que você quer marcar.
+            </p>
+            <p>
+                Algumas tags são auto fecháveis, ou seja, não precisam de uma tag de fechamento, como <code>&lt;img&gt;</code> para imagens ou <code>&lt;br /&gt;</code> para quebras de linha.
+            </p>
+        </section>
+
+        <section id="entendendo">
+            <h3>Entenda o que cada tag faz e em que situações ela deve ser usada no HTML.</h3>
+            <ul>
+                <li><strong>&lt;h1&gt; a &lt;h6&gt;</strong>: Essas tags definem títulos de diferentes níveis, que são usados para organizar o conteúdo de forma hierárquica.</li>
+                <li><strong>&lt;p&gt;</strong>: Define parágrafos de texto, ideal para blocos com uma ou mais ideias.</li>
+                <li><strong>&lt;mark&gt;</strong>: Destaca um trecho do texto com um fundo amarelo, como se fosse marca-texto.</li>
+                <li><strong>&lt;small&gt;</strong>: Indica texto de menor importância, exibido em fonte reduzida. Muito usado para rodapés, notas ou avisos legais.</li>
+                <li><strong>&lt;i&gt;</strong>: Aplica estilo de itálico ao texto, geralmente usado para expressar ênfase leve ou termos estrangeiros.</li>
+                <li><strong>&lt;u&gt;</strong>: Sublinha o texto (underline). Usado raramente hoje em dia, mas pode destacar elementos específicos.</li>
+                <li><strong>&lt;strong&gt;</strong>: Dá destaque semântico ao texto, indicando que ele é importante (aparece em negrito). Funciona visualmente como a tag <code>&lt;b&gt;</code>, mas com a diferença de que <code>&lt;strong&gt;</code> possui significado semântico, o que ajuda leitores de tela e softwares de acessibilidade a entenderem que aquele trecho merece ênfase.</li>
+                <li><strong>&lt;ol&gt; e &lt;ul&gt;</strong>: Criam listas ordenadas (com números) e não ordenadas (com marcadores), respectivamente.</li>
+                <li><strong>&lt;li&gt;</strong>: Define um item dentro de qualquer tipo de lista (<code>ol</code> ou <code>ul</code>).</li>
+                <li><strong>&lt;a&gt;</strong>: Cria hiperlinks, permitindo a navegação entre páginas ou seções de uma única página.</li>
+                <li><strong>&lt;hr&gt;</strong>: Insere uma linha horizontal, usada para separar visualmente conteúdos ou seções.</li>
+                 <li><strong>&lt;sub&gt;</strong>: Exibe texto como subscrito, útil em fórmulas químicas (ex: H<sub>2</sub>O).</li>
+                <li><strong>&lt;sup&gt;</strong>: Exibe texto como sobrescrito, comum em potências (ex: x<sup>2</sup>).</li>
+                <li><strong>&lt;blockquote&gt;</strong>: Citação em bloco, usada para trechos de textos ou falas com referência (citadas de fontes externas).</li>
+                <li><strong>&lt;img&gt;</strong>: Insere imagens na página. É uma tag auto fechável.</li>
+                <li><strong>&lt;div&gt;</strong>: Elemento genérico de bloco, usado para agrupar e organizar conteúdo. Muito útil para aplicar estilos com CSS.</li>
+                <li><strong>&lt;br&gt;</strong>: Quebra de linha. Usada para pular uma linha sem iniciar um novo parágrafo.</li>
+                <li><strong>&lt;form&gt;</strong>: Cria formulários para envio de dados (cadastro, login, etc.).</li>
+                <li><strong>&lt;input&gt;</strong>: Campo de entrada de dados dentro de formulários (texto, senha, checkbox, etc.).</li>
+                <li><strong>&lt;table&gt;</strong>: Utilizada para criar tabelas com linhas e colunas.</li>
+                <li><strong>&lt;font&gt;</strong>: Define cor, tipo e tamanho da fonte. Essa tag já está obsoleta no HTML5, ainda dá para usar, mas com o tempo e com novas atualizações ela será descontinuada.</li>
+                <li><strong>&lt;del&gt;</strong>: Mostra que um texto foi excluído. Fica com um risco no meio, indicando remoção.</li>
+                <li><strong>&lt;abbr&gt;</strong>: Abreviação com explicação. Ao passar o mouse sobre a sigla, mostra o significado.</li>
+                <li><strong>&lt;section&gt;</strong>: Define uma seção genérica do documento, usada para agrupar conteúdo tematicamente relacionado. Ajuda na organização e melhora a navegação assistida.</li>
+                <li><strong>&lt;nav&gt;</strong>: Representa uma seção da página com links de navegação, como menus ou índices. Importante para acessibilidade e estrutura semântica.</li>
+</ul>
+
+        </section>
+
+        <section id="conclusao">
+            <h3>Conclusão</h3>
+            <p>
+                Até agora, aprendi que o HTML é a base essencial para estruturar páginas web, funcionando como as ferragens em uma construção. Só com HTML é possível criar páginas, mas o resultado costuma ser um conteúdo “bruto”, sem muita formatação ou apelo visual — cumpre o básico, mas não encanta.
+            </p>
+            <p>
+                É quando o CSS entra em cena que a mágica acontece: ele estiliza e embeleza o site, definindo cores, layouts e fontes, deixando tudo visualmente atraente e organizado. E para tornar a experiência interativa, dinâmica e responsiva, o JavaScript é indispensável, permitindo que os sites “conversem” com os usuários, respondam a ações e criem funcionalidades complexas.
+            </p>
+            <p>
+                Ainda estou no começo dessa jornada, aprendendo e praticando esses pilares fundamentais do desenvolvimento front-end. Sei que dominar HTML, CSS e JavaScript será o caminho para me tornar um desenvolvedor com conhecimento sólido, capaz de criar sites e aplicações web completas, funcionais e atraentes.
+            </p>
+            <p>
+                Afinal, não basta ter apenas a estrutura; é preciso estilo e inteligência para construir uma experiência digital de qualidade — do jeitinho que quero oferecer como futuro desenvolvedor.
+            </p>
+        </section>
+
+        <section aria-label="Referências bibliográficas">
+            <h4>Referências</h4>
+            <ul>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs - HTML</a></li>
+                <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools - HTML Tutorial</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank" rel="noopener noreferrer">MDN - Conceitos básicos de HTML</a></li>
+                <li><a href="https://www.treinaweb.com.br/blog/o-que-e-html/" target="_blank" rel="noopener noreferrer">TreinaWeb - O que é HTML?</a></li>
+                <li><a href="https://www.w3.org/TR/html52/" target="_blank" rel="noopener noreferrer">W3C - Especificação HTML5.2</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <hr />
+        <p>© 2025 Gustavo - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
